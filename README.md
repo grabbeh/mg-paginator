@@ -7,8 +7,7 @@ A directive to make paginating content in your Angular.js application easier (ho
 
 Include the code in mg-paginator.js in your own application and then on the page where you wish to paginate content include the following:
 
-    <div mg-paginator array-of-items="arrayOfItems" items-per-page="10">
-    </div>
+    <div mg-paginator array-of-items="arrayOfItems" items-per-page="10"></div>
     
 This directive can be used by passing in an array of items from a controller and the number of items to be displayed per page as an option (hard-coded or otherwise). The array of items will then be split into a group of arrays each with the given length.
 
