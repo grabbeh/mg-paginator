@@ -1,7 +1,7 @@
 mg-paginator
 ============
 
-A directive to make paginating content in your Angular.js application much easier (hopefully).
+A directive to make paginating content in your Angular.js application easier (hopefully).
 
 **Sample use**
 
