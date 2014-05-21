@@ -8,7 +8,9 @@ Directive can be used by passing in an array of items and the items to be displa
 
 A watch is set up in the directive so the processing of the array will only take place once the data is available (so if you're making a $http call to get data it will take this into account).
 
-You will need to provide a template to display each page of data. Helper functions are provided as part of the directive which you can use in your template (most are self-explanatory):
+You will need to provide a template to display each page of data using ng-repeat most likely (with each page of data exposed as 'items' for the purposes of display in the template). 
+
+Helper functions are provided as part of the directive which you can use in your template (most are self-explanatory):
 
     $scope.prevPage()
     
