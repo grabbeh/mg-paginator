@@ -45,11 +45,11 @@ Example partial for display of data:
         </li>
     </ul>
 
-    <div>
-        <div ng-hide="checkIfFirst(pageNumber)" ng-click="prevPage(pageNumber)">Prev</div>
-        <div ng-hide="checkIfFirst(pageNumber)" ng-click="firstPage()">1</div>
-        <div> {{ pageNumber }} </div>
-        <div ng-hide="checkIfLast(pageNumber)" ng-click="lastPage()"> {{ groupOfArrays.length }} </div>
-        <div ng-hide="checkIfLast(pageNumber)" ng-click="nextPage(pageNumber)">Next</div>
-    </div>
+        <div>
+            <div ng-hide="checkIfFirst(pageNumber)" ng-click="prevPage(pageNumber)">Prev</div>
+            <div ng-hide="checkIfFirst(pageNumber)" ng-click="firstPage()">1</div>
+            <div> {{ pageNumber }} </div>
+            <div ng-hide="checkIfLast(pageNumber)" ng-click="lastPage()"> {{ groupOfArrays.length }} </div>
+            <div ng-hide="checkIfLast(pageNumber)" ng-click="nextPage(pageNumber)">Next</div>
+        </div>
     </div>
