@@ -58,4 +58,4 @@ Example template for display of data:
 
 **Licence**
 
-MIT
+MIT-based but no requirement for attribution.
