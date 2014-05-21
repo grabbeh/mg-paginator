@@ -16,27 +16,19 @@ You will need to provide a template to display each page of data using ng-repeat
 
 Helper functions are provided as part of the directive which you can use in your template (most are self-explanatory):
 
-**$scope.prevPage()**
+- $scope.prevPage()
+
+- $scope.nextPage()
     
-Go to previous page.
+- $scope.firstPage()
 
-**$scope.nextPage()**
+- $scope.lastPage()
 
-Go to next page.
-    
-**$scope.firstPage()**
-
-Go to first page.
-
-**$scope.lastPage()**
-
-Go to last page.
-
-**$scope.checkIfFirst()**
+- $scope.checkIfFirst()
     
 This function can be used to hide a 'Previous' button where you are on the first page of data.
 
-**$scope.checkIfLast()**
+- $scope.checkIfLast()
 
 Likewise this function can be used to hide a 'Next' button where you are on the last page of data. 
 
