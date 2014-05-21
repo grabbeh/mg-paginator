@@ -22,8 +22,7 @@
             },
             scope: {
                 groupedArrayOfItems: "=",
-                itemsPerPage: "=",
-                showModal: "&"
+                itemsPerPage: "="
             },
             controller: function($scope) {
                 $scope.groupOfArrays = [];
