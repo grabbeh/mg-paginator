@@ -51,3 +51,7 @@ Example template for display of data:
             <div ng-hide="checkIfLast(pageNumber)" ng-click="nextPage(pageNumber)">Next</div>
         </div>
     </div>
+
+**Licence**
+
+MIT
