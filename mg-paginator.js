@@ -2,7 +2,7 @@
   
   .directive('mgPaginator', function() {
       return {
-            templateUrl: "/partials/example.html",
+            templateUrl: "sample-partial.html",
             link: function(scope, elements, attrs){
                  scope.$watch(attrs.groupedArrayOfItems, function(newVal){
                       if (newVal === undefined){
