@@ -1,7 +1,7 @@
 mg-paginator
 ============
 
-*Sample use*
+**Sample use**
 
     <div mg-Paginator array-of-items="array" items-per-page="10">
     </div>
@@ -12,35 +12,35 @@ A watch is set up in the directive so the processing of the array will only take
 
 You will need to provide a template to display each page of data using ng-repeat most likely (with each page of data exposed as 'items' for the purposes of display in the template). 
 
-*Helper functions*
+**Helper functions**
 
 Helper functions are provided as part of the directive which you can use in your template (most are self-explanatory):
 
-*$scope.prevPage()*
+**$scope.prevPage()**
     
 Go to previous page.
 
-*$scope.nextPage()*
+**$scope.nextPage()**
 
 Go to next page.
     
-*$scope.firstPage()*
+**$scope.firstPage()**
 
 Go to first page.
 
-*$scope.lastPage()*
+**$scope.lastPage()**
 
 Go to last page.
 
-*$scope.checkIfFirst()*
+**$scope.checkIfFirst()**
     
 This function can be used to hide a 'Previous' button where you are on the first page of data.
 
-*$scope.checkIfLast()*
+**$scope.checkIfLast()**
 
 Likewise this function can be used to hide a 'Next' button where you are on the last page of data. 
 
-*Sample template*
+**Sample template**
 
 Example template for display of data:
 
