@@ -1,14 +1,18 @@
 mg-paginator
 ============
 
+A directive to make paginating content in your Angular.js application much easier (hopefully).
+
 **Sample use**
 
-    <div mg-Paginator array-of-items="array" items-per-page="10">
+Include the code in mg-paginator.js in your own application and then on the page where you wish to paginate content include the following:
+
+    <div mg-Paginator array-of-items="arrayOfItems" items-per-page="10">
     </div>
     
-This directive can be used by passing in an array of items and the number of items to be displayed per page as options. The array of items will then be split into a group of arrays each with the given length.
+This directive can be used by passing in an array of items from a controller and the number of items to be displayed per page as an option (hard-coded or otherwise). The array of items will then be split into a group of arrays each with the given length.
 
-A watch is set up in the directive so the processing of the array will only take place once the data is available (so if you're making a $http call to get data it will take this into account).
+A $watch is set up in the directive so the processing of the array will only take place once the data is available (so if you're making a $http call to get data it will take this into account).
 
 You will need to provide a template to display each page of data using ng-repeat most likely (with each page of data exposed as 'items' for the purposes of display in the template). 
 
