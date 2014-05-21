@@ -1,10 +1,12 @@
 mg-paginator
 ============
 
+Sample use is as follows:
+
     <div mg-Paginator array-of-items="array" items-per-page="10">
     </div>
     
-Directive can be used by passing in an array of items and the items to be displayed per page as options. The array of items will then be split into a group of arrays each with the given length.
+This directive can be used by passing in an array of items and the number of items to be displayed per page as options. The array of items will then be split into a group of arrays each with the given length.
 
 A watch is set up in the directive so the processing of the array will only take place once the data is available (so if you're making a $http call to get data it will take this into account).
 
@@ -36,14 +38,14 @@ This function can be used to hide a 'Previous' button where you are on the first
 
 Likewise this function can be used to hide a 'Next' button where you are on the last page of data. 
 
-Example partial for display of data:
+Example template for display of data:
 
     <div>
         <ul>
             <li ng-repeat="items in items">
                 <div> {{ item }} </div>
-        </li>
-    </ul>
+            </li>
+        </ul>
 
         <div>
             <div ng-hide="checkIfFirst(pageNumber)" ng-click="prevPage(pageNumber)">Prev</div>
