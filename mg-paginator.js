@@ -2,10 +2,9 @@
   
   .directive('mgPaginator', function() {
       return {
-            templateUrl: "/partials/admin-expiry.html",
-            replace: true, 
+            templateUrl: "/partials/example.html",
             link: function(scope, elements, attrs){
-                 scope.$watch(attrs.sortedByExpiry, function(newVal){
+                 scope.$watch(attrs.groupedArrayOfItems, function(newVal){
                       if (newVal === undefined){
                           return;
                       }
@@ -22,7 +21,7 @@
     
             },
             scope: {
-                sortedByExpiry: "=",
+                groupedArrayOfItems: "=",
                 itemsPerPage: "=",
                 showModal: "&"
             },
@@ -50,9 +49,5 @@
                       return true;
                    }
                 };
-                $scope.showModalWrapper = function(tm){
-                    var func = $scope.showModal();
-                    func(tm);
-             }
           }
       })
