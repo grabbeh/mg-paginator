@@ -4,7 +4,7 @@
       return {
             templateUrl: "sample-partial.html",
             link: function(scope, elements, attrs){
-                 scope.$watch(attrs.groupedArrayOfItems, function(newVal){
+                 scope.$watch('groupedArrayOfItems', function(newVal){
                       if (newVal === undefined){
                           return;
                       }
