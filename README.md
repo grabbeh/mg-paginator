@@ -8,6 +8,7 @@ A directive to make paginating content in your Angular.js application easier (ho
 Include the code in mg-paginator.js in your own application and then on the page where you wish to paginate content include the following:
 
     <div mg-paginator array-of-items="arrayOfItems" items-per-page="10">
+        // transcluded content
         <div ng-repeat="item in arrayOfItems">{{ item }}</div>
     </div>
     
