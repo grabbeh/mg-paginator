@@ -29,6 +29,7 @@ Helper functions are provided as part of the directive which you can use in your
     $scope.firstPage()
 
     $scope.lastPage()
+    
 
     $scope.checkIfFirst()
     
