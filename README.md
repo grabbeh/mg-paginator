@@ -22,41 +22,23 @@ The directive uses transclusion so you can insert your html for viewing data as 
 
 Helper functions are provided as part of the directive which you can use in your template (most are self-explanatory):
 
-- $scope.prevPage()
+    $scope.prevPage()
 
-- $scope.nextPage()
+    $scope.nextPage()
     
-- $scope.firstPage()
+    $scope.firstPage()
 
-- $scope.lastPage()
+    $scope.lastPage()
 
-- $scope.checkIfFirst()
+    $scope.checkIfFirst()
     
 This function can be used to hide a 'Previous' button where you are on the first page of data.
 
-- $scope.checkIfLast()
+    $scope.checkIfLast()
 
 Likewise this function can be used to hide a 'Next' button where you are on the last page of data. 
 
-**Sample template**
-
-Example template for display of data:
-
-    <div>
-        <ul>
-            <li ng-repeat="items in items">
-                <div> {{ item }} </div>
-            </li>
-        </ul>
-
-        <div>
-            <div ng-hide="checkIfFirst(pageNumber)" ng-click="prevPage(pageNumber)">Prev</div>
-            <div ng-hide="checkIfFirst(pageNumber)" ng-click="firstPage()">1</div>
-            <div> {{ pageNumber }} </div>
-            <div ng-hide="checkIfLast(pageNumber)" ng-click="lastPage()"> {{ groupOfArrays.length }} </div>
-            <div ng-hide="checkIfLast(pageNumber)" ng-click="nextPage(pageNumber)">Next</div>
-        </div>
-    </div>
+The helper functions change the page number which in turn changes the 'items' array made available to the transcluded content.
 
 **Licence**
 
