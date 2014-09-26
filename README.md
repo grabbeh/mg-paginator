@@ -30,7 +30,6 @@ Helper functions are provided as part of the directive which you can use in your
 
     $scope.lastPage()
     
-
     $scope.checkIfFirst()
     
 This function can be used to hide a 'Previous' button where you are on the first page of data.
